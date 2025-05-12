@@ -1,7 +1,3 @@
-
-
----
-
 # 📊 StatSnap
 
 StatSnap is a personal WPF desktop application built using C# that calculates key statistical values from a predefined set of numbers. It quickly determines the **lowest**, **highest**, **median**, and **mode** values from a list, providing a simple and visually appealing interface for quick statistical insight.
