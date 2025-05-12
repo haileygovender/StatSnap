@@ -1,4 +1,4 @@
-Sure! Here's a clean and professional `README.md` file for your **StatSnap** project:
+
 
 ---
 
