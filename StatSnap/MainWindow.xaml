@@ -1,0 +1,42 @@
+﻿<Window x:Class="StatSnap.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StatSnap"
+        mc:Ignorable="d"
+        Title="StatSnap - Statistics Analyzer" Height="400" Width="500" WindowStartupLocation="CenterScreen" Background="Azure">
+    <Grid Margin="20">
+        <Border Background="White" CornerRadius="10" Padding="20" BorderBrush="#ccc" BorderThickness="1" >
+            <StackPanel>
+                <!-- Title -->
+                <TextBlock Text="📊 StatSnap" FontSize="20" FontWeight="Bold" Foreground="#333" Margin="0,0,0,10"/>
+                <TextBlock Text="Enter a list of numbers to analyze." FontSize="12" Foreground="Gray" Margin="0,0,0,20"/>
+
+                <!-- Number List -->
+                <TextBlock Text="Stats Number List:" FontWeight="SemiBold" Foreground="#444"/>
+                <TextBlock x:Name="NumberListTextBlock" 
+                           Text="1, 4, 3, 4, 5, 7, 7, 8, 9, 10"
+                           Margin="0,0,0,15" 
+                           Foreground="#222" 
+                           Background="#f0f0f0"
+                           Padding="5"/>
+
+                <!-- Button -->
+                <Button Content="Calculate Stats" Click="CalculateStats_Click"
+                        Width="180" Height="35" Background="#4CAF50" Foreground="White"
+                        HorizontalAlignment="Left" Margin="0,0,0,20" BorderBrush="#388E3C"/>
+
+                <!-- Results -->
+                <TextBlock Text="Results:" FontSize="14" FontWeight="Bold" Foreground="#444" Margin="0,0,0,10"/>
+
+                <StackPanel Margin="10,0,0,0">
+                    <TextBlock x:Name="LowestTextBlock" FontSize="13"/>
+                    <TextBlock x:Name="HighestTextBlock" FontSize="13"/>
+                    <TextBlock x:Name="MedianTextBlock" FontSize="13"/>
+                    <TextBlock x:Name="ModeTextBlock" FontSize="13"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
